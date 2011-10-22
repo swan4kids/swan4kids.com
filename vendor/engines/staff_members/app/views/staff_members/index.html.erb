@@ -25,8 +25,15 @@ $(".staff_member_menu_link").live("click", function(event){
     <% end %>
   </ul>
 
+  <div id="bio_instructions">
+    Click on any staff member's photo to see their bio.
+  </div>
+
   <div id="staff_members_initial_content" class="bio">
-    The video of Diana's testimony will appear here.
+    <strong>Introducing Diana Vuolo, Executive Director</strong>
+    <div>
+      <iframe src="http://player.vimeo.com/video/30885495?title=0&amp;byline=0&amp;portrait=0" width="400" height="225" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
+    </div>
   </div>
   <% @staff_members.each do |staff_member| %>
     <% content_tag :div, :id => "bio_#{staff_member.id}", :class => "bio" do %>
