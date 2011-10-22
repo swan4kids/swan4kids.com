@@ -1,11 +1,38 @@
+<%= javascript_include_tag "jquery" %>
+<style type="text/css">
+.bio {
+  display: none;
+}
+#staff_members_initial_content {
+  display: block;
+}
+</style>
+<script type="text/javascript">
+$(".staff_member_menu_link").click(function(event){
+  event.preventDefault();
+  var id_to_show = $(this).attr("id").replace(/link_/, '');
+  $(".bio").hide();
+  $("#bio_" + id_to_show).show();
+});
+</script>
+
 <% content_for :body_content_left do %>
   <ul id="staff_members">
     <% @staff_members.each do |staff_member| %>
       <li>
-        <%= link_to staff_member.name, staff_member_path(staff_member) %>
+        <%= link_to staff_member.name, staff_member_path(staff_member), :class => "staff_member_menu_link", :id => "link_#{staff_member.id}" %>
       </li>
     <% end %>
   </ul>
+
+  <div id="staff_members_initial_content" class="bio">
+    The video of Diana's testimony will appear here.
+  </div>
+  <% @staff_members.each do |staff_member| %>
+    <% content_tag :div, :id => "bio_#{staff_member.id}", :class => "bio" do %>
+      <%= staff_member.bio.html_safe %>
+    <% end %>
+  <% end %>
 <% end %>
 
 <%= render :partial => "/shared/content_page" %>
