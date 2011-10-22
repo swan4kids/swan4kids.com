@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111022005354) do
+ActiveRecord::Schema.define(:version => 20111022192005) do
 
   create_table "event_categories", :force => true do |t|
     t.string   "name"
@@ -180,6 +180,18 @@ ActiveRecord::Schema.define(:version => 20111022005354) do
   add_index "slugs", ["locale"], :name => "index_slugs_on_locale"
   add_index "slugs", ["name", "sluggable_type", "scope", "sequence"], :name => "index_slugs_on_n_s_s_and_s", :unique => true
   add_index "slugs", ["sluggable_id"], :name => "index_slugs_on_sluggable_id"
+
+  create_table "staff_members", :force => true do |t|
+    t.string   "name"
+    t.string   "title"
+    t.integer  "image_id"
+    t.text     "bio"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "staff_members", ["id"], :name => "index_staff_members_on_id"
 
   create_table "user_plugins", :force => true do |t|
     t.integer "user_id"

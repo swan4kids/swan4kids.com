@@ -58,3 +58,5 @@ gem 'refinerycms-calendar', '~>1.1.0'
 gem 'refinerycms-i18n',         '~> 1.0.0'
 
 # END USER DEFINED
+
+gem 'refinerycms-staff_members', '1.0', :path => 'vendor/engines'

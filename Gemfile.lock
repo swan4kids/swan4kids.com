@@ -1,3 +1,8 @@
+PATH
+  remote: vendor/engines
+  specs:
+    refinerycms-staff_members (1.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -159,4 +164,5 @@ DEPENDENCIES
   refinerycms (~> 1.0.8)
   refinerycms-calendar (~> 1.1.0)
   refinerycms-i18n (~> 1.0.0)
+  refinerycms-staff_members (= 1.0)!
   sqlite3
