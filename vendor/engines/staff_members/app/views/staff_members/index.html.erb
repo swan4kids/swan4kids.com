@@ -8,7 +8,7 @@
 }
 </style>
 <script type="text/javascript">
-$(".staff_member_menu_link").click(function(event){
+$(".staff_member_menu_link").live("click", function(event){
   event.preventDefault();
   var id_to_show = $(this).attr("id").replace(/link_/, '');
   $(".bio").hide();
