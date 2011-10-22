@@ -1,0 +1,25 @@
+fr:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    staff_members:
+      title: Staff Members
+  admin:
+    staff_members:
+      actions:
+        create_new: Créer un(e) nouve(au/l/lle) Staff Member
+        reorder: Réordonner les Staff Members
+        reorder_done: Fin de réordonnancement des Staff Members
+      records:
+        title: Staff Members
+        sorry_no_results: "Désolé ! Aucun résultat."
+        no_items_yet: 'Il n''y a actuellement aucun(e) Staff Member. Cliquer sur "Créer un(e) nouve(au/l/lle) Staff Member" pour créer votre premi(er/ère) staff member.'
+      staff_member:
+        view_live_html: Voir ce(t/tte) staff member <br/><em>(Ouvre une nouvelle fenêtre)</em>
+        edit: Modifier ce(t/tte) staff member
+        delete: Supprimer définitivement ce(t/tte) staff member
+  staff_members:
+    show:
+      other: Autres Staff Members

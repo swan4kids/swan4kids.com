@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    staff_members:
+      title: Staff Members
+  admin:
+    staff_members:
+      actions:
+        create_new: Maak een nieuwe Staff Member
+        reorder: Wijzig de volgorde van de Staff Members
+        reorder_done: Klaar met het wijzingen van de volgorde van de Staff Members
+      records:
+        title: Staff Members
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Staff Members. Druk op 'Maak een nieuwe Staff Member' om de eerste aan te maken.
+      staff_member:
+        view_live_html: Bekijk deze staff member op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze staff member
+        delete: Verwijder deze staff member voor eeuwig
+  staff_members:
+    show:
+      other: Andere Staff Members

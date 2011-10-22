@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    staff_members:
+      title: Staff Members
+  admin:
+    staff_members:
+      actions:
+        create_new: Lag en ny Staff Member
+        reorder: Endre rekkefølgen på Staff Members
+        reorder_done: Ferdig å endre rekkefølgen Staff Members
+      records:
+        title: Staff Members
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Staff Members enda. Klikk på "Lag en ny Staff Member" for å legge til din første staff member.
+      staff_member:
+        view_live_html: Vis hvordan denne staff member ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne staff member
+        delete: Fjern denne staff member permanent
+  staff_members:
+    show:
+      other: Andre Staff Members

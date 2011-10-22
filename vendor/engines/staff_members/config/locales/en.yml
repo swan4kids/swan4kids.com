@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    staff_members:
+      title: Staff Members
+  admin:
+    staff_members:
+      actions:
+        create_new: Add New Staff Member
+        reorder: Reorder Staff Members
+        reorder_done: Done Reordering Staff Members
+      records:
+        title: Staff Members
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Staff Members yet. Click "Add New Staff Member" to add your first staff member.
+      staff_member:
+        view_live_html: View this staff member live <br/><em>(opens in a new window)</em>
+        edit: Edit this staff member
+        delete: Remove this staff member forever
+  staff_members:
+    show:
+      other: Other Staff Members
