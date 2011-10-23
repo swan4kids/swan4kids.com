@@ -54,19 +54,19 @@ table {
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
-}
-header, footer {
-  width: auto;
-}
-#page {
-  width: 1020px;
+  background: #763298;
 }
 #page_container {
-  border-top: 2px solid #000;
+  width: 960px;
+  background: #fff;
+  margin: 0 auto;
+}
+header, section#page, footer {
+}
+#page {
+  padding: 20px;
 }
 header {
-  height: 45px;
-  background: url("/images/header-background.png") repeat-x;
 }
 header nav {
   float: right;
@@ -89,16 +89,14 @@ header nav a:active {
   margin-right: 0;
 }
 h1#logo {
-  float: left;
-  margin-left: 20px;
 }
 h1#logo a {
   text-indent: -9999px;
   overflow: hidden;
   display: block;
-  width: 163px;
-  height: 37px;
-  background: url("/images/logo-purple-corner.png");
+  width: 959px;
+  height: 303px;
+  background: url("/images/logo-header.png");
 }
 h1#body_content_title {
   font-size: 2em;
