@@ -8,7 +8,13 @@
 #staff_members li {
   float: left;
   list-style-type: none;
-  padding-right: 10px;
+  padding-right: 6px;
+}
+#staff_members .staff_member_menu_link img {
+  padding: 5px;
+}
+#staff_members .current img {
+  background: #0061ae;
 }
 #bio_instructions {
   clear: both;
@@ -24,9 +30,11 @@
 <script type="text/javascript">
 $(".staff_member_menu_link").live("click", function(event){
   event.preventDefault();
+  $(".staff_member_menu_link").removeClass("current");
+  $(this).addClass("current");
   var id_to_show = $(this).attr("id").replace(/link_/, '');
   $(".bio").hide();
-  $("#bio_" + id_to_show).show();
+  $("#bio_" + id_to_show).fadeIn();
 });
 </script>
 
