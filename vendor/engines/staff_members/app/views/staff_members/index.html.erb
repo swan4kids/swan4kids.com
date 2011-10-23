@@ -1,5 +1,19 @@
 <%= javascript_include_tag "jquery" %>
 <style type="text/css">
+#staff_members {
+  margin: 0;
+  padding: 0;
+  width: 500px;
+}
+#staff_members li {
+  float: left;
+  list-style-type: none;
+  padding-right: 10px;
+}
+#bio_instructions {
+  clear: both;
+  margin: 20px 0;
+}
 .bio {
   display: none;
 }
@@ -20,7 +34,7 @@ $(".staff_member_menu_link").live("click", function(event){
   <ul id="staff_members">
     <% @staff_members.each do |staff_member| %>
       <li>
-        <%= link_to staff_member.name, staff_member_path(staff_member), :class => "staff_member_menu_link", :id => "link_#{staff_member.id}" %>
+        <%= link_to image_tag(staff_member.name.downcase.gsub(/\s/, '_') + ".jpg", :alt => staff_member.name), staff_member_path(staff_member), :class => "staff_member_menu_link", :id => "link_#{staff_member.id}" %>
       </li>
     <% end %>
   </ul>
