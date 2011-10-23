@@ -80,9 +80,10 @@ h1#logo a {
 
 nav#menu {
   width: 308px;
+  min-height: 550px;
   float: left;
   font-family: Helvetica, Arial, sans-serif;
-  background: url("/images/sidebar-background.gif") no-repeat;
+  background: url("/images/sidebar-background.gif") no-repeat 10px -83px;
 }
 .menu li {
   float: none;
@@ -92,7 +93,11 @@ nav#menu a:visited,
 nav#menu a:hover,
 nav#menu a:active {
   text-decoration: none;
-  padding: 10px 0 10px 16px;
+  width: 304px;
+  height: 38px;
+  line-height: 42px;
+  padding-left: 12px;
+  margin-left: 4px;
   display: block;
   font-size: 1.2em;
   color: #7f7f7f;
@@ -103,8 +108,11 @@ nav#menu li.selected a:hover,
 nav#menu li.selected a:active {
   color: #000;
   font-weight: normal;
+  background: url("/images/active-sidebar-link.gif") no-repeat;
 }
-
+nav#menu a:hover {
+  text-decoration: underline;
+}
 #page {
   width: 575px;
   float: right;
