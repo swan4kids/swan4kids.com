@@ -2,3 +2,9 @@
   Override default refinery homepage styles here.
   These only apply to the homepage of your site.
 */
+h1#body_content_title {
+  display: none;
+}
+.inner h1 {
+  font-size: 2.5em;
+}
