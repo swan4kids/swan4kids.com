@@ -9,6 +9,10 @@
       <header>
         <%= render :partial => "/shared/header" -%>
       </header>
+      <%= render(:partial => "/shared/menu", :locals => {
+                   :dom_id => 'menu',
+                   :css => 'menu'
+                 }) %>
       <section id='page'>
         <%= yield %>
       </section>

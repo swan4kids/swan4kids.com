@@ -52,7 +52,7 @@ table {
 	border-spacing: 0;
 }
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 16px;
   background: #763298;
 }
@@ -60,35 +60,7 @@ body {
   width: 960px;
   background: #fff;
   margin: 0 auto;
-}
-header, section#page, footer {
-}
-#page {
   padding: 20px;
-}
-header {
-}
-header nav {
-  float: right;
-  margin-right: 20px;
-}
-header nav a:link,
-header nav a:visited,
-header nav a:hover,
-header nav a:active {
-  height: 36px;
-  display: block;
-  line-height: 36px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 100;
-  font-size: 1.2em;
-  padding: 0 10px;
-}
-.menu li {
-  margin-right: 0;
-}
-h1#logo {
 }
 h1#logo a {
   text-indent: -9999px;
@@ -98,13 +70,33 @@ h1#logo a {
   height: 303px;
   background: url("/images/logo-header.png");
 }
+
+nav#menu {
+  width: 360px;
+  float: left;
+}
+.menu li {
+  float: none;
+  margin: 10px 0;
+  text-align: right;
+}
+
+#page {
+  width: 552px;
+  float:right;
+  margin-right: 15px;
+}
+
+footer {
+  clear: both;
+}
+
 h1#body_content_title {
   font-size: 2em;
   margin: 10px 0;
   border-bottom: 1px solid #D3D3D3;
 }
 .inner {
-  width: 460px;
   line-height: 1.2;
 }
 .inner p {
