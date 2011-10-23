@@ -33,8 +33,12 @@ $(".staff_member_menu_link").live("click", function(event){
   $(".staff_member_menu_link").removeClass("current");
   $(this).addClass("current");
   var id_to_show = $(this).attr("id").replace(/link_/, '');
-  $(".bio").hide();
+
+  /* If we hide all the bios and then show the current one, the page
+     content will probably be shorter than the page height and it
+     makes it look like the page scrolls to the top. */
   $("#bio_" + id_to_show).fadeIn();
+  $(".bio").not("#bio_" + id_to_show).hide();
 });
 </script>
 
