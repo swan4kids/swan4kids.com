@@ -85,6 +85,9 @@ nav#menu {
   font-family: Helvetica, Arial, sans-serif;
   background: url("/images/sidebar-background.gif") no-repeat 10px -83px;
 }
+nav#menu ul {
+  margin-bottom: 20px;
+}
 .menu li {
   float: none;
 }
@@ -112,6 +115,20 @@ nav#menu li.selected a:active {
 }
 nav#menu a:hover {
   text-decoration: underline;
+}
+nav#menu a#call-to-action:link,
+nav#menu a#call-to-action:visited,
+nav#menu a#call-to-action:hover,
+nav#menu a#call-to-action:active {
+  width: 290px;
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+  color: #fff;
+  background: url("/images/call-to-action-button.gif") no-repeat;
+  margin: 0;
+  padding: 0;
+  text-shadow: 1px 1px 1px #333;
 }
 #page {
   width: 575px;
