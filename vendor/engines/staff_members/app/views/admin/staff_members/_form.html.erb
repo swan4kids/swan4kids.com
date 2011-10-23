@@ -3,27 +3,17 @@
           :object => @staff_member,
           :include_object_name => true
         } %>
-  
+
   <div class='field'>
     <%= f.label :name -%>
     <%= f.text_field :name, :class => 'larger widest'  -%>
   </div>
-  
+
   <div class='field'>
     <%= f.label :title -%>
     <%= f.text_field :title  -%>
   </div>
-  
-  <div class='field'>
-    <%= f.label :image -%>
-    <%= render :partial => "/shared/admin/image_picker", :locals => {
-          :f => f,
-          :field => :image_id,
-          :image => @staff_member.image,
-          :toggle_image_display => false
-        } %>
-  </div>
-  
+
   <div class='field'>
     <div id='page-tabs' class='clearfix ui-tabs ui-widget ui-widget-content ui-corner-all'>
       <ul id='page_parts'>
@@ -43,7 +33,7 @@
       </div>
     </div>
   </div>
-  
+
   <%= render :partial => "/shared/admin/form_actions",
               :locals => {
                 :f => f,
