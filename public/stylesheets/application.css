@@ -60,14 +60,14 @@ em {
 body {
   font-family: "Times New Roman", Times, serif;
   font-size: 16px;
-  background: #763298;
+  background: #763298 url("/images/background-textured-tile.gif");
   color: #333;
 }
 #page_container {
   width: 920px;
-  background: #fff;
+  background: url("/images/body-background-textured.gif") repeat-y;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 40px;
 }
 h1#logo a {
   text-indent: -9999px;
