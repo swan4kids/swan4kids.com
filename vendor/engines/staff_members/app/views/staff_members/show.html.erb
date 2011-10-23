@@ -1,45 +1,38 @@
+<style type="text/css">
+header, footer, nav#menu {
+  display: none;
+}
+body, #page_container {
+  background: #fff;
+}
+.inner img {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+section:after {
+  clear: none;
+}
+#page {
+  float: none;
+  margin-right: auto;
+}
+</style>
+
 <% content_for :body_content_title do %>
   <%= @staff_member.name %>
 <% end %>
 
 <% content_for :body_content_left do %>
   <section>
-    <h1>Name</h1>
-    <p>
-      <%=raw @staff_member.name %>
-    </p>
-  </section>
-  <section>
-    <h1>Title</h1>
+    <%= image_tag(@staff_member.name.downcase.gsub(/\s/, '_') + ".jpg", :alt => @staff_member.name) %>
     <p>
       <%=raw @staff_member.title %>
     </p>
   </section>
   <section>
-    <h1>Image</h1>
-    <p>
-      <%= image_fu @staff_member.image, nil %>
-    </p>
+    <%=raw @staff_member.bio %>
   </section>
-  <section>
-    <h1>Bio</h1>
-    <p>
-      <%=raw @staff_member.bio %>
-    </p>
-  </section>
-<% end %>
-
-<% content_for :body_content_right do %>
-  <aside>
-    <h2><%= t('.other') %></h2>
-    <ul id="staff_members">
-      <% @staff_members.each do |staff_member| %>
-        <li>
-          <%= link_to staff_member.name, staff_member_path(staff_member) %>
-        </li>
-      <% end %>
-    </ul>
-  </aside>
 <% end %>
 
 <%= render :partial => "/shared/content_page" %>
