@@ -64,34 +64,43 @@ body {
   color: #333;
 }
 #page_container {
-  width: 960px;
+  width: 920px;
   background: #fff;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px 20px;
 }
 h1#logo a {
   text-indent: -9999px;
   overflow: hidden;
   display: block;
-  width: 959px;
-  height: 303px;
-  background: url("/images/logo-header.png");
+  width: 919px;
+  height: 256px;
+  background: url("/images/logo-swan-swoosh-shadow.png");
 }
 
 nav#menu {
-  width: 360px;
+  width: 308px;
   float: left;
+  font-family: Helvetica, Arial, sans-serif;
 }
 .menu li {
   float: none;
   margin: 10px 0;
-  text-align: right;
+}
+nav#menu a:link,
+nav#menu a:visited,
+nav#menu a:hover,
+nav#menu a:active {
+  text-decoration: none;
+  padding: 10px 0 10px 16px;
+  display: block;
+  font-size: 1.2em;
 }
 
 #page {
-  width: 552px;
-  float:right;
-  margin-right: 15px;
+  width: 575px;
+  float: right;
+  margin-right: 8px;
 }
 
 footer {
@@ -105,8 +114,7 @@ h1#body_content_title {
 }
 #body_content_left .inner {
   padding-right: 0;
-  line-height: 1.2;
-  font-size: 0.95em;
+  line-height: 1.5;
 }
 .inner p {
   margin: 10px 0;
