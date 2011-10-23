@@ -51,6 +51,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
 body {
   font-family: "Times New Roman", Times, serif;
   font-size: 16px;
@@ -97,7 +103,8 @@ h1#body_content_title {
   margin: 10px 0;
   border-bottom: 1px solid #D3D3D3;
 }
-.inner {
+#body_content_left .inner {
+  padding-right: 0;
   line-height: 1.2;
   font-size: 0.95em;
 }
