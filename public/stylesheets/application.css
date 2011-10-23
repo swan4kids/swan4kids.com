@@ -63,6 +63,12 @@ body {
   background: #763298 url("/images/background-textured-tile.gif");
   color: #333;
 }
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #0075bb;
+}
 #page_container {
   width: 920px;
   background: url("/images/body-background-textured.gif") repeat-y;
