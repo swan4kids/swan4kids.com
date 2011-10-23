@@ -134,10 +134,30 @@ nav#menu a#call-to-action:active {
   width: 575px;
   float: right;
   margin-right: 8px;
+  margin-bottom: 40px;
 }
 
 footer {
   clear: both;
+  width: auto;
+  text-transform: lowercase;
+  border-top: 1px solid #cdcdcd;
+  padding-top: 16px;
+  font-size: 0.875em;
+}
+footer ul {
+  margin: 0 auto;
+  width: 525px;
+}
+footer li {
+  float: left;
+  margin-right: 20px;
+}
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active {
+  color: #a8a8a8;
 }
 
 h1#body_content_title {
