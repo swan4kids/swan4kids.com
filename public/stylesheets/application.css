@@ -99,6 +99,7 @@ h1#body_content_title {
 }
 .inner {
   line-height: 1.2;
+  font-size: 0.95em;
 }
 .inner p {
   margin: 10px 0;
