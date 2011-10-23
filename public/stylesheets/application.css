@@ -82,10 +82,10 @@ nav#menu {
   width: 308px;
   float: left;
   font-family: Helvetica, Arial, sans-serif;
+  background: url("/images/sidebar-background.gif") no-repeat;
 }
 .menu li {
   float: none;
-  margin: 10px 0;
 }
 nav#menu a:link,
 nav#menu a:visited,
@@ -95,6 +95,14 @@ nav#menu a:active {
   padding: 10px 0 10px 16px;
   display: block;
   font-size: 1.2em;
+  color: #7f7f7f;
+}
+nav#menu li.selected a:link,
+nav#menu li.selected a:visited,
+nav#menu li.selected a:hover,
+nav#menu li.selected a:active {
+  color: #000;
+  font-weight: normal;
 }
 
 #page {
