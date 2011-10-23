@@ -51,6 +51,12 @@ $(".staff_member_menu_link").live("click", function(event){
   </div>
   <% @staff_members.each do |staff_member| %>
     <% content_tag :div, :id => "bio_#{staff_member.id}", :class => "bio" do %>
+      <h2>
+        <%= staff_member.name %>
+      </h2>
+      <h3>
+        <%= staff_member.title %>
+      </h3>
       <%= staff_member.bio.html_safe %>
     <% end %>
   <% end %>
