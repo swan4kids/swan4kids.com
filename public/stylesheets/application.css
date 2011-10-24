@@ -129,11 +129,11 @@ nav#menu a#call-to-action:active {
   width: 290px;
   height: 65px;
   line-height: 65px;
-  text-align: center;
   color: #fff;
   background: url("/images/call-to-action-button.gif") no-repeat;
   margin: 0;
   padding: 0;
+  padding-left: 17px;
   text-shadow: 1px 1px 1px #333;
 }
 #page {
