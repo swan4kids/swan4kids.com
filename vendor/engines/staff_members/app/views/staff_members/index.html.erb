@@ -58,24 +58,6 @@ $(document).ready(function(){
   <div id="bio_instructions">
     Click on any staff member's photo to see their bio.
   </div>
-
-  <div id="staff_members_initial_content" class="bio">
-    <strong>Introducing Diana Vuolo, Executive Director</strong>
-    <div>
-<iframe src="http://player.vimeo.com/video/30885495?title=0&amp;byline=0&amp;portrait=0" width="551" height="310" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
-    </div>
-  </div>
-  <% @staff_members.each do |staff_member| %>
-    <% content_tag :div, :id => "bio_#{staff_member.id}", :class => "bio" do %>
-      <h2>
-        <%= staff_member.name %>
-      </h2>
-      <h3>
-        <%= staff_member.title %>
-      </h3>
-      <%= staff_member.bio.html_safe %>
-    <% end %>
-  <% end %>
 <% end %>
 
 <%= render :partial => "/shared/content_page" %>
