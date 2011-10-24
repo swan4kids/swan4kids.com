@@ -42,17 +42,8 @@ $(document).ready(function(){
     width: 630,
     height: 550
   });
-
-  Shadowbox.setup('a.vimeo', {
-      height: 360,
-      width: 640,
-      overlayOpacity: 0.8,
-      flashVars: {
-          clip_id: "30885495",
-          autoplay: "1"
-      }
-  });
 });
+
 </script>
 
 <% content_for :body_content_left do %>
@@ -71,7 +62,7 @@ $(document).ready(function(){
   <div id="staff_members_initial_content" class="bio">
     <strong>Introducing Diana Vuolo, Executive Director</strong>
     <div>
-      <%= link_to image_tag("/images/staff-video-thumbnail.png", :alt => "Video introducing Diana Vuolo"), "http://vimeo.com/moogaloop.swf", :class => "vimeo" %>
+<iframe src="http://player.vimeo.com/video/30885495?title=0&amp;byline=0&amp;portrait=0" width="551" height="310" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
     </div>
   </div>
   <% @staff_members.each do |staff_member| %>
