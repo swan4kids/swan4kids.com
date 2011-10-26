@@ -4,21 +4,36 @@
      No, I don't care. -->
 <%= stylesheet_link_tag "/javascripts/shadowbox/shadowbox.css" %>
 <style type="text/css">
-#staff_members {
-  margin: 0;
-  padding: 0;
-  width: 500px;
-}
-#staff_members li {
+iframe {
   float: left;
-  list-style-type: none;
-  padding-right: 6px;
-}
-#staff_members .staff_member_menu_link img {
+  margin: 10px 0;
   padding: 5px;
 }
-#staff_members .current img {
-  background: #0061ae;
+.inner .staff_members {
+  margin: 0;
+  padding: 0;
+  width: 575px;
+}
+.inner .staff_members li {
+  float: left;
+  list-style-type: none;
+  margin-left: 39px;
+}
+.inner .staff_members li.new_row {
+  clear: left;
+  margin-left: 0;
+}
+.inner .staff_members .staff_member_menu_link img {
+  padding: 5px;
+}
+#executive_director {
+  float: left;
+  width: auto;
+  margin: 0;
+  padding-left: 15px;
+}
+#executive_director li {
+  margin-left: 0;
 }
 #bio_instructions {
   clear: both;
@@ -26,9 +41,6 @@
 }
 .bio {
   display: none;
-}
-#staff_members_initial_content {
-  display: block;
 }
 </style>
 <script type="text/javascript">
@@ -47,9 +59,19 @@ $(document).ready(function(){
 </script>
 
 <% content_for :body_content_left do %>
-  <ul id="staff_members">
-    <% @staff_members.each do |staff_member| %>
-      <li>
+  <% diana = @staff_members.detect {|s| s.name == "Diana Vuolo"} %>
+  <% everyone_else = @staff_members - [diana] %>
+  <h3>Testimony of Diana Vuolo, Executive Director</h3>
+  <iframe src="http://player.vimeo.com/video/30885495?title=0&amp;byline=0&amp;portrait=0" width="373" height="210" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
+  <ul class="staff_members" id="executive_director">
+    <li>
+      <%= link_to image_tag(diana.name.downcase.gsub(/\s/, '_') + ".jpg", :alt => diana.name), staff_member_path(diana), :class => "staff_member_menu_link", :id => "link_#{diana.id}" %>
+    </li>
+  </ul>
+
+  <ul class="staff_members">
+    <% everyone_else.each_with_index do |staff_member, i| %>
+      <li class="<%= i % 3 == 0 ? 'new_row' : '' %>">
         <%= link_to image_tag(staff_member.name.downcase.gsub(/\s/, '_') + ".jpg", :alt => staff_member.name), staff_member_path(staff_member), :class => "staff_member_menu_link", :id => "link_#{staff_member.id}" %>
       </li>
     <% end %>
