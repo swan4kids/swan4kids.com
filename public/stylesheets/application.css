@@ -136,6 +136,14 @@ nav#menu a#call-to-action:active {
   padding-left: 17px;
   text-shadow: 1px 1px 1px #333;
 }
+#social {
+  width: 304px;
+}
+#social li {
+  float: left;
+  margin: 0 2px;
+  width: 32px;
+}
 #page {
   width: 575px;
   float: right;
