@@ -4,6 +4,8 @@
 	background-color: #f4f4f4;
 }
 .individual_event h1 {
+    font-size: 1.5em;
+    font-weight: bold;
 	margin: 0 0 10px;
 	padding: 0;
 }
@@ -76,6 +78,10 @@
 	float: left;
 }
 
+#featured_events .individual_event {
+    background-color: lavender;
+}
+
 #event_map {
     margin-top: 5px;
 }
@@ -84,4 +90,9 @@
   font-weight: bold;
 }
 
+#rss_feed_subscribe {
+  display: block;
+  padding-left: 25px;
+  background: url('/images/rss-feed.png') no-repeat;
+}
 	
