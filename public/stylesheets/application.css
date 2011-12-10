@@ -161,7 +161,7 @@ footer {
 }
 footer ul {
   margin: 0 auto;
-  width: 560px;
+  width: 80%;
 }
 footer li {
   float: left;
@@ -198,7 +198,7 @@ h1#body_content_title {
 .inner h2,
 .inner h3 {
   margin: 10px 0;
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 .inner ul {
   list-style-type: disc;
