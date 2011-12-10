@@ -174,8 +174,17 @@ footer a:active {
   color: #a8a8a8;
 }
 
+#body_content_left {
+  width: 400px;
+}
+
+#body_content_right {
+  width: 170px;
+}
+
 h1#body_content_title {
   font-size: 2em;
+  font-weight: bold;
   margin: 10px 0;
   border-bottom: 1px solid #D3D3D3;
 }
