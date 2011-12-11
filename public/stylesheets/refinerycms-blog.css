@@ -2,15 +2,16 @@
   width: auto;
 }
 /* note resets global header and footer */
-.blog_post header {
-    margin-top: 15px;
+.blog_post header, #blog_post header {
+    margin-top: 0px;
 }
-.blog_post footer {
+.blog_post footer, #blog_post footer, .blog_comment_message footer {
     border-top: none;
-    padding-top: 0px;
     border-bottom: 1px solid #CDCDCD;
+    padding-top: 0px;
+    margin-bottom: 15px;
 }
-.blog_post header h1 {
+.blog_post header h1, #blog_post header h1 {
     font-weight: bold;
     font-size: 1.25em;
 }
@@ -32,6 +33,7 @@
 .field.message_field label {
   vertical-align: top;
 }
+
 #rss_feed_subscribe {
   display: block;
   padding-left: 25px;
@@ -68,6 +70,11 @@
   margin-bottom: 15px;
   position: relative;
 }
+
+.blog_comment_message p {
+  margin: 0px;
+}
+
 .flash_notice, .flash_message {
   border: 1px solid #00A017;
   color: #00A017;
