@@ -10,6 +10,8 @@
 <%= t('.message') %>:
 <%= @inquiry.message %>
 
+Receive email: <%= @inquiry.interest_email ? 'Yes' : 'No' %>
+
 Interests:
 <% %w(interest_enroll interest_donate interest_events interest_sponsor).each do |interest| -%>
     <% if @inquiry.send(interest) then -%>

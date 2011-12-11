@@ -25,8 +25,11 @@
         <%= f.text_area :message, :rows => 8 %>
       </div>
       <div class='field'>
-	  <h3>Check the box below if you are requesting info on:</h3>
+        <%= f.check_box :interest_email, :default => true %>
+        <%= f.label :interest_email, "Yes! I'd like to receive email updates on SWAN" %>
       </div>
+      <hr/>
+      <p>Check boxes below if you are requesting info on:</p>
       <div class='field'>
         <%= f.check_box :interest_enroll %>
         <%= f.label :interest_enroll, 'Music School enrollment' %>
