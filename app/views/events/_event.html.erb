@@ -21,7 +21,10 @@
 	  <p><span class="label">Date:</span>&nbsp;
 		<%= event.start_at.strftime('%b %e, %Y') %></p>
 		<p><span class="label">Time:</span>&nbsp;
-		<%= event.start_at.strftime('%l:%M %p') %></p>
+		<%= event.start_at.strftime('%l:%M %p') if event.start_at %>
+		<%= " - " + event.end_at.strftime('%l:%M %p') if event.end_at && 
+	               !(event.start_at == event.end_at)  %>
+		</p>
         </section><!-- .start_end -->
 
         <section class="venue">
