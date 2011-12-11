@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# use this to initialize environment vars before executing rails environment
+# needed for external resources - see config/initializers
+# 
+#
+export ACTIONMAILER_ADDRESS=smtp.gmail.com
+export ACTIONMAILER_PORT=25
+export ACTIONMAILER_USER=someone@gmail.com
+export ACTIONMAILER_PASS=rosebud
+
+bundle exec rails $@

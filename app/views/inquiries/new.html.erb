@@ -1,0 +1,50 @@
+<% content_for :body_content_left do %>
+  <div class='inquiries'>
+    <%=raw @page[Page.default_parts.first.to_sym] %>
+
+    <%= form_for @inquiry do |f| %>
+      <%= render :partial => "/shared/admin/error_messages",
+                 :locals => {
+                   :object => @inquiry,
+                   :include_object_name => true
+                 } %>
+      <div class='field'>
+        <%= f.required_label :name %>
+        <%= f.text_field :name %>
+      </div>
+      <div class='field'>
+        <%= f.required_label :email %>
+        <%= f.text_field :email %>
+      </div>
+      <div class='field'>
+        <%= f.label :phone %>
+        <%= f.text_field :phone %>
+      </div>
+      <div class='field message_field'>
+        <%= f.required_label :message, "Comment/Questions"  %>
+        <%= f.text_area :message, :rows => 8 %>
+      </div>
+      <div class='field'>
+        <%= f.check_box :interest_enroll %>
+        <%= f.label :interest_enroll, 'Music School enrollment' %>
+      </div>
+      <div class='field'>
+        <%= f.check_box :interest_donate %>
+        <%= f.label :interest_donate, 'Donating' %>
+      </div>
+      <div class='field'>
+        <%= f.check_box :interest_events %>
+	<%= f.label :interest_enroll, 'Events' %>
+      </div>
+      <div class='field'>
+        <%= f.check_box :interest_sponsor %>
+	<%= f.label :interest_enroll, 'Sponsoring' %>
+      </div>
+      <div class='actions'>
+        <%= f.submit t('.send') %>
+        <%= link_to t('.privacy_policy'), "/pages/privacy-policy", :id => "privacy_link" if RefinerySetting.find_or_set(:show_contact_privacy_link, false) %>
+      </div>
+    <% end %>
+  </div>
+<% end %>
+<%= render :partial => "/shared/content_page" %>

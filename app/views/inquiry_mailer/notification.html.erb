@@ -1,0 +1,25 @@
+<%= t('.greeting') %>,
+
+<%= t('.you_recieved_new_inquiry') %>
+
+<%= t('.inquiry_starts') %>
+
+<%= t('.from') %>: <%= @inquiry.name %>
+<%= t('.email') %>: <%= @inquiry.email %>
+<%= t('.phone') %>: <%= @inquiry.phone %>
+<%= t('.message') %>:
+<%= @inquiry.message %>
+
+Interests:
+<% %w(interest_enroll interest_donate interest_events interest_sponsor).each do |interest| -%>
+    <% if @inquiry.send(interest) then -%>
+  - <%= interest.gsub('interest_','').titleize %>
+    <% end -%>
+<% end -%>
+
+<%= t('.inquiry_ends') %>
+
+<%= t('.closing_line') %>,
+<%= RefinerySetting[:site_name] %>
+
+<%= t('.ps') %>

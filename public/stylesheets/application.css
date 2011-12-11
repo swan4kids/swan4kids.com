@@ -207,3 +207,16 @@ h1#body_content_title {
 .inner ul li {
   margin: 10px 0;
 }
+
+
+/* Engine style overrides */
+
+.inquiries form input[type="checkbox"] {
+  width: 20px;
+}
+
+.inquiries form input[type="checkbox"] + label {
+  width: 200px;
+}
+
+
