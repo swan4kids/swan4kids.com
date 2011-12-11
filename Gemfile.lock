@@ -135,6 +135,8 @@ GEM
       dragonfly (~> 0.9.0)
       rack-cache (>= 0.5.3)
       refinerycms-core (= 1.0.8)
+    refinerycms-inquiries (1.0.1)
+      filters_spam (~> 0.2)
     refinerycms-pages (1.0.8)
       activerecord (~> 3.0.10)
       awesome_nested_set (~> 2.0)
@@ -173,5 +175,6 @@ DEPENDENCIES
   refinerycms-blog (~> 1.6.1)
   refinerycms-calendar (~> 1.1.0)
   refinerycms-i18n (~> 1.0.0)
+  refinerycms-inquiries (~> 1.0.1)
   refinerycms-staff_members (= 1.0)!
   sqlite3
