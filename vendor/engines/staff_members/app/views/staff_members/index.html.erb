@@ -64,7 +64,7 @@ $(document).ready(function(){
   <% diana = @staff_members.detect {|s| s.name == "Diana Vuolo"} %>
   <% everyone_else = @staff_members - [diana] %>
   <h3>A Word from Diana Vuolo, Executive Director</h3>
-  <iframe src="http://player.vimeo.com/video/30885495?title=0&amp;byline=0&amp;portrait=0" width="373" height="210" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
+  <iframe src="http://player.vimeo.com/video/31170272?title=0&amp;byline=0&amp;portrait=0" width="373" height="210" frameborder="0" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
   <ul class="staff_members" id="executive_director">
     <li>
       <%= link_to image_tag(diana.name.downcase.gsub(/\s/, '_') + ".jpg", :alt => diana.name), staff_member_path(diana), :class => "staff_member_menu_link", :id => "link_#{diana.id}" %>
