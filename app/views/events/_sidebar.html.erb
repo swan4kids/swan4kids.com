@@ -6,7 +6,6 @@
                           href='#{events_url(:format => :rss)}' />".html_safe -%>
 <% content_for :body_content_right do %>
 	<aside class="sidebar_module rss">
-		<h2>RSS</h2>
 		<%= link_to "Subscribe", events_path(:format => :rss), :id => "rss_feed_subscribe" %>
 	</aside><!-- .rss -->
 	

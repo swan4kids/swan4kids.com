@@ -4,8 +4,10 @@
 	</div>
 	
   <div id="all_events" class="events">
-		<h2>All Events</h2>
-		<%= render :partial => 'event', :collection => @events %>
+      <% unless @events.empty? %>
+	  <h2>More Events</h2>
+	  <%= render :partial => 'event', :collection => @events %>
+      <% end %>
 	</div>
 <% end %>
 

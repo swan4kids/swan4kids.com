@@ -34,6 +34,33 @@
   vertical-align: top;
 }
 
+/* added from refinerycms-events.css */
+
+.sidebar_module {
+	padding: 15px;
+}
+.sidebar_module h2 {
+	margin: 0 0 10px;
+}
+.sidebar_module ul {
+	list-style: square;
+	padding: 0 0 0 26px;
+	margin: 0;
+}
+.sidebar_module ul li {
+	margin: 2px 0;
+	padding: 2px 0;
+}
+.sidebar_module rss {
+	padding: 15px 15px 15px 0;
+}
+/* end from refinerycms-events.css */
+
+/* override refinery default for vertical content layout */
+#body_content_right .inner {
+    padding-left: 0px;
+}
+
 #rss_feed_subscribe {
   display: block;
   padding-left: 25px;

@@ -1,0 +1,40 @@
+<% content_for :body_content_left do %>
+  <%=raw @page[Page.default_parts.first.to_sym] if Page.default_parts.any? %>
+
+  <% if @blog_posts.any? %>
+    <section id="blog_posts">
+      <%= render :partial => "/blog/shared/post", :collection => @blog_posts %>
+      <%= will_paginate @blog_posts %>
+    </section>
+  <% else %>
+    <p><%= t('.no_blog_articles_yet') %></p>
+  <% end %>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <%=raw @page[Page.default_parts.second.to_sym] if Page.default_parts.many? %>
+
+  <!-- disable categories and tags sections for now 
+  
+  <aside class="sidebar_module categories">
+    <%= render :partial => "/blog/shared/categories" %>
+  </aside>
+  
+  <aside class="sidebar_module tags">
+    <%= render :partial => "/blog/shared/tags" %>
+  </aside>
+
+  -->
+
+  <aside class="sidebar_module rss">
+    <%= render :partial => "/blog/shared/rss_feed" %>
+  </aside>
+
+  <aside class="sidebar_module archives">
+    <%= blog_archive_list %>
+  </aside>
+
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>
+<% content_for :stylesheets, stylesheet_link_tag('refinerycms-blog') %>

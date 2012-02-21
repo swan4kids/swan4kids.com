@@ -41,7 +41,13 @@
 	margin: 2px 0;
 	padding: 2px 0;
 }
-
+.sidebar_module rss {
+	padding: 15px 15px 15px 0;
+}
+/* override refinery default for vertical content layout */
+#body_content_right .inner {
+    padding-left: 0px;
+}
 #share_this_event {
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
