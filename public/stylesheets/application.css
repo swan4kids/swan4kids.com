@@ -144,6 +144,16 @@ nav#menu a#call-to-action:active {
   margin: 0 2px;
   width: 32px;
 }
+#feature {
+  width: 304px;
+  margin: 12px;
+}
+#feature p {
+  font-style: italic;
+  font-size: 0.9em;
+  color: #7f7f7f;
+}
+
 #page {
   width: 575px;
   float: right;
