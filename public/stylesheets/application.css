@@ -146,12 +146,6 @@ nav#menu a#call-to-action:active {
 }
 #feature {
   width: 304px;
-  margin: 12px;
-}
-#feature p {
-  font-style: italic;
-  font-size: 0.9em;
-  color: #7f7f7f;
 }
 
 #page {
