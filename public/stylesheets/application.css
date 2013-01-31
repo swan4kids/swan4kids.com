@@ -178,6 +178,14 @@ footer a:active {
   color: #a8a8a8;
 }
 
+footer #mailing-address {
+  clear: both;
+  text-transform: none;
+  padding-top: 16px;
+  width: 90%;
+  text-align: center;
+}
+
 #body_content_left {
   width: 575px;
 }

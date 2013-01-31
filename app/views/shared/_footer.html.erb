@@ -15,4 +15,5 @@
              } -%>
   <li><a href="/financial-reports">Financial Reports</a></li>
 </ul>
+<div id="mailing-address"><%= RefinerySetting.find_or_set(:mailing_address, nil) %></div>
 <% end -%>
